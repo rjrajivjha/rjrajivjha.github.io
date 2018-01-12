@@ -6,6 +6,7 @@ description: CodeStreet | Mithila Tech
 img: hackathona.png 
 tags: [Startup]
 author: Rajiv Jha
+hidden: True
 ---
 
 Check out the [HackerEarth Dashboard][hacker-earth] for more info on how we developed the platform. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
