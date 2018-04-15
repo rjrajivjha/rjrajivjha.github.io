@@ -1,11 +1,11 @@
 ---
 layout: post
-title: The Hackathon Journey : I
+title: The Hackathon Journey Started
 date: 2018-04-15 23:32:20 +0530
 description: How I formed the team
 img: ignited_minds.jpg
 tags: [Hackathon]
-author: Aditi Prerna (For Rajiv Jha)
+author: Aditi Prerna
 ---
  Ignited_Minds: Journey I
  
