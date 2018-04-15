@@ -71,3 +71,7 @@ managed our time very well. The best thing about our team is- it wasn’t prepla
 And unplanned things are probably the best and so is Ignited_Minds. 
 
 Keep tuned for more stories from my hackathon series.
+
+Credits - [Aditi Prerna][aditi-prerna] (Writer & Editor). She is writing and compiling my stories at rjrajivjha.
+
+[aditi-prerna]: http://www.prernadt.blogspot.com/
