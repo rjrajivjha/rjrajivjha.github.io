@@ -15,7 +15,7 @@ do collaborative computer programming and hack on the solutions for challenges. 
 On the very first day of my college I heard “Microsoft didn’t show up, just because there’s no club in the college”. This shook me as I just like any other student had
 many expectations. I had dreamt a lot but here the insight of students being dormant was something I couldn’t accede to. Though I was upset but the
 benevolence in me said I need to do something as engineering is my passion and I started exploring.
-I met Navdeep Sandhu bhaiya, one of my seniors in library on very first day only and shared the idea of opening a
+I met Mr. Navdeep Sandhu, one of my seniors in library on very first day only and shared the idea of opening a
 club. He agreed in no time as he himself was planning this. But opening a club was
 not like piece of cake for us. The Dean asked us to count out, as he thought we
 would engage ourselves in politics instead of study. But this didn’t shake my
@@ -31,11 +31,11 @@ tough task. Because I was in my first year and this made my seniors furious that
 now a junior is going to lead them. Moreover my batchmate thought I was acting
 smart. But somebody has said true bravery is doing what is right, even if it is not 
 popular. Therefore, one good thing that happened was 10-12 seniors came
-forward to teach in club. These seniors were friends of Navdeep Sandhu bhaiya
+forward to teach in club. These seniors were friends of Navdeep Sandhu 
 (co-founder). And this made 2014 go well for us.
 After that, came 2nd year of my college life. It brought challenges to me. Those
 seniors who had joined hands with me parted their ways for their further studies.
-And Navdeep bhaiya also received a call from cricket team. Now I was alone.
+And Navdeep also received a call from cricket team. Now I was alone.
 Every great story in the world happened when someone decided not to give up
 and kept going no matter what. And so, I started a coding sprint in the starting of
 August that year. I started to guide students. They learned whilst working. But
