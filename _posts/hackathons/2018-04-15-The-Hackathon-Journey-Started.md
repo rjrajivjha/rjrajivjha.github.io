@@ -54,9 +54,13 @@ Now I, Prabhanshu, Piyush and Anudit were a team going to participate in
 Smart India Hackathon. This team has won all the Hackathon we participated in. 
 
 Moreover, we design prototype only after being satisfied with answers to these questions:
+
 How will it affect the world?
+
 How is it going to add value to the market?
+
 How is it innovative?
+
 What’s the target audience, is it broad or a narrow category?
 
 Life has got all those twist and turns but we need to hold on tight. It has been two year since then. 
