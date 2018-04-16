@@ -5,7 +5,7 @@ date: 2017-05-21 23:32:20 +0530
 description: WHack - #WhatTheHack by Airtel, was a platform to compete in developing innovative solutions & solving real problems, which better the lives of millions.
 img: hackathona.png 
 tags: [Hackathon]
-author: Rajiv Jha
+author: Aditi Prerna
 ---
 
 7th May 2017, this was the day when we were heading back to Delhi after winning Avaya Hackathon, Pune. This was our second Hackathon after Smart India Hackathon. We landed on Delhi airport at 10:50 PM. As soon as I descended my brain reminded me of Airtel Hackathon in Gurgaon. Immediately, I checked the Hacker earth. This is a website where Hackathon is hosted online. There I came to know it was the last day to submit our idea. I called Piyush and Prabhanshu in post-haste as they didn’t participate in the Avaya Hackathon and I asked them to submit idea. I had participated in Avaya Hackathon along with Anudit and Shivam Singhal, a junior whom I was training.
@@ -25,3 +25,8 @@ Since, we didn’t want any excuses, explanation or regrets at the end of the da
 After sometime it was time for result announcement. So, we headed towards auditorium. When announcement was commenced we were packing our bags. Those announcements were of top 10 for the next round.
 One after the other names were announced and we were checking Uber and Ola cab rates. Post 6th announcement we heard Ignited_Minds. The feeling was ecstatic. It was jubilant. We were on cloud nine. Or I could say we were on the top of the world. They were clapping in every announcement but in our time Anudit yelled and his whooping seemed like he was over the moon. The hall was silent but us. Heads turned towards us. And then we opened our bags. We started to work on presentation. We didn’t get much time. Presentation started in 1 hour.  Ours was on 7th number. The team before ours faced some technical issue and so order was swapped. When the 6th team gave presentation they were asked many questions. They also received applause. Our presentation was given by Prabhanshu and we three were to answer cross questions. Presentation was given and prototype was shown. We ended up saying thank you and they too did the same. After our presentation other teams were also cross questioned and they too received applause. Our morale went down. We were again packing our bags. Now it was the time to declare winners. Second and first runner ups were announced. Then somehow I noticed 4 certificates for the winner. And interestingly, there were no such team having four members but us. This time I knew we won. This time I shouted. All of us were asked to guess the winning team. I was like- we are the winners. Finally, they announced and we won. My teammates thought I was kidding. Had not, we thrown ourselves in this notch competition, we won’t have had won the Airtel Hackathon.
  
+ Keep tuned for more stories from my hackathon series.
+
+Credits - [Aditi Prerna][aditi-prerna] (Writer & Editor). She is writing and compiling my stories at rjrajivjha.
+
+[aditi-prerna]: http://www.prernadt.blogspot.com/
