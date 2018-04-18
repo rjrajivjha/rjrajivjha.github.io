@@ -3,9 +3,9 @@ layout: post
 title: Airtel Whack
 date: 2018-04-18 23:32:20 +0530
 description: WHack - #WhatTheHack by Airtel
-img: hackathona.png 
+img: airtel-whack.png 
 tags: [Hackathon]
-author: Aditi Prerna
+author: Rajiv Jha
 ---
 May 21, 2017
 
