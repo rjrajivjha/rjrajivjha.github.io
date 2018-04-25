@@ -3,9 +3,9 @@ layout: post
 title: EY Intelligent Automation
 date: 2017-11-04 23:32:20 +0530
 description: EY Intelligent Automation
-img: hackathona.png 
+img: eyhack.jpg 
 tags: [Hackathon]
-author: Rajiv Jha
+author: Aditi Prerna
 ---
 
 Contract Reader Tool
@@ -72,3 +72,10 @@ For extracting text- pyPDF2, Textract
 > Natural Language Toolkit is a library that provides
 modules for processing text, classifying, tokenizing, stemming, tagging,
 parsing and more.
+
+
+Keep tuned for more stories from my hackathon series.
+
+Credits - [Aditi Prerna][aditi-prerna] (Writer & Editor). She is writing and compiling my stories at rjrajivjha.
+
+[aditi-prerna]: http://www.prernadt.blogspot.com/
