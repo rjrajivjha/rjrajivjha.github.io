@@ -2,7 +2,7 @@
 layout: post
 title: Setup First Kafka Message Stream From Command Line 
 date: 2018-04-18 23:32:20 +0530
-description: WHack - #Setup Kafka and ZooKeeper
+description: Setup Kafka and ZooKeeper on MacOs
 img: kafka-zookeeper.png 
 tags: [Hackathon]
 author: Rajiv Jha
