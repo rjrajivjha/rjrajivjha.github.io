@@ -18,13 +18,13 @@ Download Apache Kafka binaries from Mirror site. Official Documentation and down
 I have downloaded Kafka and decompressed the file in Documents folder. Now open the command prompt / terminal and let's dive deep.
 
 
-> Start Zookeeper server
+## Start Zookeeper server
 
 `Rajivs-Air:Documents rjrajivjha$ cd kafka_2.12-1.1.0/
 
 Rajivs-Air:kafka_2.12-1.1.0 rjrajivjha$ ./bin/zookeeper-server-start.sh config/zookeeper.properties`
 
-> Start Kafka Server 
+## Start Kafka Server 
 
 
 `Last login: Sat Jun 30 01:52:17 on ttys003
@@ -34,7 +34,7 @@ Rajivs-Air:~ rjrajivjha$ cd Documents/kafka_2.12-1.1.0
 Rajivs-Air:kafka_2.12-1.1.0 rjrajivjha$ ./bin/kafka-server-start.sh config/server.properties`
 
 
-> Create Topic 
+## Create Topic 
 
 `Rajivs-Air:~ rjrajivjha$ cd Documents/kafka_2.12-1.1.0
 
@@ -43,7 +43,7 @@ Rajivs-Air:kafka_2.12-1.1.0 rjrajivjha$ ./bin/kafka-topics.sh --create --zookeep
 Created topic "test".`
 
 
-> Run Producer
+## Run Producer
 
 `Rajivs-Air:Documents rjrajivjha$ cd kafka_2.12-1.1.0
 
@@ -60,7 +60,7 @@ Rajivs-Air:kafka_2.12-1.1.0 rjrajivjha$ ./bin/kafka-console-producer.sh --broker
 >Type your next message here to be produced at consumer end`
 
 
-> Run Consumer 
+## Run Consumer 
 
 
 
