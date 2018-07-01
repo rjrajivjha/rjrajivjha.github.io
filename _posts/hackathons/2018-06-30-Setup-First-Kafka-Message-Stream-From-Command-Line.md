@@ -20,63 +20,63 @@ I have downloaded Kafka and decompressed the file in Documents folder. Now open 
 
 ## Start Zookeeper server
 
-`Rajivs-Air:Documents rjrajivjha$ cd kafka_2.12-1.1.0/
+`Rajivs-Air:Documents rjrajivjha$ cd kafka_2.12-1.1.0/`
 
-Rajivs-Air:kafka_2.12-1.1.0 rjrajivjha$ ./bin/zookeeper-server-start.sh config/zookeeper.properties`
+`Rajivs-Air:kafka_2.12-1.1.0 rjrajivjha$ ./bin/zookeeper-server-start.sh config/zookeeper.properties`
 
 ## Start Kafka Server 
 
 
-`Last login: Sat Jun 30 01:52:17 on ttys003
+`Last login: Sat Jun 30 01:52:17 on ttys003`
 
-Rajivs-Air:~ rjrajivjha$ cd Documents/kafka_2.12-1.1.0
+`Rajivs-Air:~ rjrajivjha$ cd Documents/kafka_2.12-1.1.0`
 
-Rajivs-Air:kafka_2.12-1.1.0 rjrajivjha$ ./bin/kafka-server-start.sh config/server.properties`
+`Rajivs-Air:kafka_2.12-1.1.0 rjrajivjha$ ./bin/kafka-server-start.sh config/server.properties`
 
 
 ## Create Topic 
 
-`Rajivs-Air:~ rjrajivjha$ cd Documents/kafka_2.12-1.1.0
+`Rajivs-Air:~ rjrajivjha$ cd Documents/kafka_2.12-1.1.0`
 
-Rajivs-Air:kafka_2.12-1.1.0 rjrajivjha$ ./bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic test
+`Rajivs-Air:kafka_2.12-1.1.0 rjrajivjha$ ./bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic test`
 
-Created topic "test".`
+`Created topic "test".`
 
 
 ## Run Producer
 
-`Rajivs-Air:Documents rjrajivjha$ cd kafka_2.12-1.1.0
+`Rajivs-Air:Documents rjrajivjha$ cd kafka_2.12-1.1.0`
 
-Rajivs-Air:kafka_2.12-1.1.0 rjrajivjha$ ./bin/kafka-console-producer.sh --broker-list localhost:9092 --topic test
+`Rajivs-Air:kafka_2.12-1.1.0 rjrajivjha$ ./bin/kafka-console-producer.sh --broker-list localhost:9092 --topic test`
 
->my first message
+`>my first message`
 
->my second message
+`>my second message`
 
->my third message
+`>my third message`
 
->wow
+`>wow`
 
->Type your next message here to be produced at consumer end`
+`>Type your next message here to be produced at consumer end`
 
 
 ## Run Consumer 
 
 
 
-`Last login: Sat Jun 30 02:06:16 on ttys005
+`Last login: Sat Jun 30 02:06:16 on ttys005`
 
-Rajivs-Air:~ rjrajivjha$ cd Documents/kafka_2.12-1.1.0
+`Rajivs-Air:~ rjrajivjha$ cd Documents/kafka_2.12-1.1.0`
 
-Rajivs-Air:kafka_2.12-1.1.0 rjrajivjha$ ./bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic test --from-beginning
+`Rajivs-Air:kafka_2.12-1.1.0 rjrajivjha$ ./bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic test --from-beginning`
 
-my first message
+`my first message`
 
-my second message
+`my second message`
 
-my third message
+`my third message`
 
-wow`
+`wow`
 
 
 Keep tuned for more blogs from my " Kafka-Zookeeper and Pyspark " series.
