@@ -22,6 +22,8 @@ I have downloaded Spark and decompressed the file in Downloads folder. Now open 
 
 Update the .bash_profile with these lines, and save with command+x and source the bash_profile.
 
+> Steps are as follows : 
+
 nano .bash_profile
 
 //edit the paths
@@ -30,17 +32,20 @@ save and exit with command+x
 
 source .bash_profile 
 
-` export SPARK_HOME=~/Downloads/spark-2.3.1-bin-hadoop2.7
 
-export PATH=$SPARK_HOME/bin:$PATH
+> Paths are given here
 
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Ho$
+`export SPARK_HOME=~/Downloads/spark-2.3.1-bin-hadoop2.7`
 
-export PATH=$JAVA_HOME:$PATH
+`export PATH=$SPARK_HOME/bin:$PATH`
 
-export PYSPARK_DRIVER_PYTHON=jupyter
+`export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Ho$`
 
-export PYSPARK_DRIVER_PYTHON_OPTS='notebook' `
+`export PATH=$JAVA_HOME:$PATH`
+
+`export PYSPARK_DRIVER_PYTHON=jupyter`
+
+`export PYSPARK_DRIVER_PYTHON_OPTS='notebook'`
 
 ## Start Master 
 
@@ -53,9 +58,9 @@ There you will find the Spark URL as well. Use the same spark url to start the s
 
 ## Start Slave with Spark Url
 
-`Rajivs-Air:spark-2.3.1-bin-hadoop2.7 rjrajivjha$ ./sbin/start-slave.sh spark://Rajivs-Air:7077 
+`Rajivs-Air:spark-2.3.1-bin-hadoop2.7 rjrajivjha$ ./sbin/start-slave.sh spark://Rajivs-Air:7077` 
 
-Rajivs-Air:spark-2.3.1-bin-hadoop2.7 rjrajivjha$ ./sbin/start-slave.sh spark://Rajivs-Air:7077 --cores 2 --memory 4g `
+`Rajivs-Air:spark-2.3.1-bin-hadoop2.7 rjrajivjha$ ./sbin/start-slave.sh spark://Rajivs-Air:7077 --cores 2 --memory 4g `
 
 
 ## Stop Slave
