@@ -25,8 +25,9 @@ Root directory is the directory where you have decompressed the tgz file, you do
 
 ## Let's follow with lead
 
-`Rajivs-Air:7.3.1 rjrajivjha$ ls
-CHANGES.txt			example
+`Rajivs-Air:7.3.1 rjrajivjha$ ls`
+
+`CHANGES.txt			example
 INSTALL_RECEIPT.json		homebrew.mxcl.solr.plist
 LICENSE.txt			libexec
 NOTICE.txt			server
@@ -56,7 +57,7 @@ Started Solr server on port 8983 (pid=19131). Happy searching!
 
 ## Create Core 
 
-`Rajivs-Air:7.3.1 rjrajivjha$ bin/solr create -c ezpg
+`Rajivs-Air:7.3.1 rjrajivjha$ bin/solr create -c ezpg`
 
 WARNING: Using _default configset with data driven schema functionality. NOT RECOMMENDED for production use.
          To turn off: bin/solr config -c ezpg -p 8983 -property update.autoCreateFields -value false
@@ -115,8 +116,11 @@ Link to download - https://github.com/lucidworks/banana
 ## Copy Banana to Server and Run Server
 
 `Rajivs-Air:7.3.1 rjrajivjha$ cd server/`
+
 `Rajivs-Air:server rjrajivjha$ cd solr-webapp/`
+
 `Rajivs-Air:solr-webapp rjrajivjha$ cd webapp/`
+
 `Rajivs-Air:webapp rjrajivjha$ cp -r ~/Downloads/banana .`
 
 > Link to Solar Dashboard - http://localhost:8983/solr/#/
@@ -134,4 +138,4 @@ Keep tuned for more blogs from ML series.
 
 Happy Learning!
 
-Rajiv Jha :) 
+Rajiv Jha :)
