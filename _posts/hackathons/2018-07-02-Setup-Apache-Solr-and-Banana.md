@@ -3,7 +3,7 @@ layout: post
 title: Setup Apache Solr and Banana
 date: 2018-07-02 23:32:20 +0530
 description:Setup Apache Solr and Banana
-img: solr.svg
+img: solr.png
 tags: [Hackathon]
 author: Rajiv Jha
 ---
