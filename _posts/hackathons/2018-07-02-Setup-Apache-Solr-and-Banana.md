@@ -3,7 +3,7 @@ layout: post
 title: Setup Apache Solr and Banana
 date: 2018-07-02 23:32:20 +0530
 description: Setup Apache Solr
-img: spark-master.png 
+img: solr.png 
 tags: [Hackathon]
 author: Rajiv Jha
 ---
@@ -11,57 +11,131 @@ July 2, 2018
 
 Hello!
 
-This article explains how to set-up spark submit to use applications via spark.
+This article explains how to set-up Apache Solr and Banana.
 
-This article assumes that you have successfully downloaded and set-up the apache spark. If not, then please refer to http://rjrajivjha.tech/Setup-Spark-Standalone-Master-and-Slave/ 
+This article assumes that you have successfully downloaded and set-up the apache solr. If not, then please download from https://www.apache.org/dyn/closer.lua/lucene/solr/7.3.1/solr-7.3.1-src.tgz
 
-Also, before moving ahead, please comment these environment variable from bash_profile, as they might cause error while submitting a standalone spark application.
 
-`#export PYSPARK_DRIVER_PYTHON=jupyter`
-`#export PYSPARK_DRIVER_PYTHON_OPTS='notebook'`
+## Move to Root Directory of Apache Solr
 
-After commenting these path variables, you can go ahead and try the tutorial.
+Root directory is the directory where you have decompressed the tgz file, you downloaded from Apache Solr website.
 
-## Write your wordcount.py file
+`Rajivs-Air:~ rjrajivjha$ cd /usr/local/Cellar/solr/7.3.1/`
 
-`"""Calculates the word count of the given file.`
-`the file can be local or if you setup cluster.`
-`It can be hdfs file path"""`
-`## Imports`
-`from pyspark import SparkConf, SparkContext`
-`from operator import add`
-`import sys`
-`## Constants`
-`APP_NAME = " HelloWorld of Big Data"`
-`##OTHER FUNCTIONS/CLASSES`
-`def main(sc,filename):`
-   `textRDD = sc.textFile(filename)`
-   `words = textRDD.flatMap(lambda x: x.split(',')).map(lambda x: (x, 1))`
-   `wordcount = words.reduceByKey(add).collect()`
-   `for wc in wordcount:`
-      `print wc[0],wc[1]`
-`if __name__ == "__main__":`
-   `# Configure Spark`
-   `conf = SparkConf().setAppName(APP_NAME)`
-   `conf = conf.setMaster("local[*]")`
-   `sc   = SparkContext(conf=conf)`
-   `filename = sys.argv[1]`
-   `# Execute Main functionality`
-  `main(sc, filename)`
-   
-   
-## Submit the Application to spark
 
-> Navigate to spark directory where you have decompressed the downloaded tgz file.
+## Let's follow with lead
 
-`Rajivs-Air:spark-2.3.1-bin-hadoop2.7 rjrajivjha$ Rajivs-Air:spark-2.3.1-bin-hadoop2.7 rjrajivjha$ bin/spark-submit --master spark://Rajivs-Air:7077 ~/Desktop/DataScienceChallenges/Sapient/wordcount.py  ~/Desktop/DataScienceChallenges/Sapient/household.csv `
+`Rajivs-Air:7.3.1 rjrajivjha$ ls`
 
-I am using Spark URL, spark://Rajivs-Air:7077 , which can be found when you run standalone master and slave on spark.
-Also, the absolute path to my wordcount.py program and absolute path to my targetted csv file.
+`CHANGES.txt			example
+INSTALL_RECEIPT.json		homebrew.mxcl.solr.plist
+LICENSE.txt			libexec
+NOTICE.txt			server
+README.txt			share
+bin`
+
+## Start Solr
+
+`Rajivs-Air:7.3.1 rjrajivjha$ bin/solr start`
+
+*** [WARN] *** Your open file limit is currently 256.  
+ 
+ It should be set to 65000 to avoid operational disruption. 
+ 
+ If you no longer wish to see this warning, set SOLR_ULIMIT_CHECKS to false in your profile or solr.in.sh
+
+*** [WARN] ***  Your Max Processes Limit is currently 709. 
+
+It should be set to 65000 to avoid operational disruption. 
+
+If you no longer wish to see this warning, set SOLR_ULIMIT_CHECKS to false in your profile or solr.in.sh
+
+Waiting up to 180 seconds to see Solr running on port 8983 [/]  
+
+Started Solr server on port 8983 (pid=19131). Happy searching!
+
+
+## Create Core 
+
+`Rajivs-Air:7.3.1 rjrajivjha$ bin/solr create -c ezpg`
+
+WARNING: Using _default configset with data driven schema functionality. NOT RECOMMENDED for production use.
+         To turn off: bin/solr config -c ezpg -p 8983 -property update.autoCreateFields -value false
+
+Created new core 'ezpg'
+
+## Copy Your Data to visualize
+
+`Rajivs-Air:7.3.1 rjrajivjha$ cd example/exampledocs/`
+
+`Rajivs-Air:exampledocs rjrajivjha$ cp ~/Desktop/Hackathon/ezpg/dataset/RawDataDuplicateRemoved.csv  .`
+
+`Rajivs-Air:exampledocs rjrajivjha$ cp ~/Desktop/Hackathon/ezpg/dataset/RawDataExplored.csv  .`
+
+`Rajivs-Air:exampledocs rjrajivjha$ ls`
+
+RawDataDuplicateRemoved.csv	monitor2.xml
+
+RawDataExplored.csv		more_books.jsonl
+
+books.csv			mp500.xml
+
+books.json			post.jar
+
+gb18030-example.xml		sample.html
+
+hd.xml				sd500.xml
+
+ipod_other.xml			solr-word.pdf
+
+ipod_video.xml			solr.xml
+
+manufacturers.xml		test_utf8.sh
+
+mem.xml				utf8-example.xml
+
+money.xml			vidcard.xml
+
+monitor.xml
+
+## Post file to Solr
+
+`Rajivs-Air:exampledocs rjrajivjha$ java -Dtype=text/csv -Dc=ezpg -jar post.jar  RawDataExplored.csv`
+
+`SimplePostTool version 5.0.0
+Posting files to [base] url http://localhost:8983/solr/ezpg/update using content-type text/csv...
+POSTing file RawDataExplored.csv to [base]
+1 files indexed.
+COMMITting Solr index changes to http://localhost:8983/solr/ezpg/update...
+Time spent: 0:01:00.474`
+
+## Download banana and untar it
+
+Link to download - https://github.com/lucidworks/banana 
+
+## Copy Banana to Server and Run Server
+
+`Rajivs-Air:7.3.1 rjrajivjha$ cd server/`
+
+`Rajivs-Air:server rjrajivjha$ cd solr-webapp/`
+
+`Rajivs-Air:solr-webapp rjrajivjha$ cd webapp/`
+
+`Rajivs-Air:webapp rjrajivjha$ cp -r ~/Downloads/banana .`
+
+> Link to Solar Dashboard - http://localhost:8983/solr/#/
+
+> Link to Banana Dashboard - http://localhost:8983/solr/banana/src/index.html#/dashboard 
+
+> Navigate to Core ezpg, which I created in browser
+
+> Click on 'query' and then 'execute query' to view the data of your csv file
+
+> To learn more about banana Dashboard, Keep tuned.
 
 Hope this helps!
-Keep tuned for more blogs from my Spark and ML series.
+Keep tuned for more blogs from ML series.
 
 Happy Learning!
 
-Rajiv Jha :) 
+Rajiv Jha :)
