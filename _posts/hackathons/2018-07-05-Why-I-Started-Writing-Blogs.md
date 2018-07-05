@@ -1,12 +1,13 @@
 ---
 layout: post
-title: Why I started writing blogs
-date: 2018-07-05 02:32:20 +0530
+title: Why I Started Writing Blogs
+date: 2018-07-05 12:27:20 +0530
 description: Why blogging
 img: blog.png
-tags: [Hackathon][life]
+tags: [Hackathon]
 author: Rajiv Jha
 ---
+
 July 5, 2018
 
 Today I will complete a week of regular blogging. It's been said, that an action turn into habit if done for continuous 21 days.
