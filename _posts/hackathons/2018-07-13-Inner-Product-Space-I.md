@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Inner Product Space - Part I
-date: 2018-07-07 02:32:20 +0530
+date: 2018-07-13 02:32:20 +0530
 description: Princple component Analysis - Basic concept
 img: vector.png
 tags: [Hackathon]
