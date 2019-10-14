@@ -1,5 +1,5 @@
 ---
-layout: postrec
+layout: post
 title: Django-SelfGuide - Part I
 date: 2019-10-14 02:32:20 +0530
 description: Django
